@@ -1,0 +1,15 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "git init\r git add README.md\r git commit -m \"first commit\"\r git branch -M main\r git remote add origin https://github.com/Abhilash107/Jest.git",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Abhilash",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
