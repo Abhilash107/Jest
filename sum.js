@@ -9,4 +9,18 @@ function myFunction(input){
 
 }
 
-export  { sum, myFunction }
+function fetchData(callback){
+    setTimeout( ()=>{
+        callback('hello')
+    }, 1000)
+}
+
+function fetchPromise(){
+    return new Promise( (resolve, reject)=>{
+        setTimeout( () => resolve('hello'), 1000 )
+    } )
+}
+
+
+
+export  { sum, myFunction, fetchData, fetchPromise }

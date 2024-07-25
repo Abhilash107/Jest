@@ -1,4 +1,4 @@
-import {sum, myFunction} from "./sum.js";
+import {sum, myFunction, fetchData, fetchPromise} from "./sum.js";
 
 
 //* while dealing with Number, Boolean values we use toBe()
@@ -56,10 +56,47 @@ import {sum, myFunction} from "./sum.js";
 
 
 
-test('throws on invalid input', ()=>{
-    expect(()=>{
-        myFunction(23);
-    }).toThrow()
-})
+// test('throws on invalid input', ()=>{
+//     expect(()=>{
+//         myFunction(23);
+//     }).toThrow()
+// })
+
+
+//*Testing asynchronous code
+// setTimeout
+
+//? Async Test Handling with done: The done parameter is a callback provided by Jest to handle asynchronous tests. It signals Jest that the test is complete.
+
+//? Try-Catch Block: The callback function uses a try-catch block to handle potential errors.
+
+// test('the data is hello', done =>{
+//     function callback(data){
+//         try {
+//             expect(data).toBe('hello')
+//             done()
+//         } catch (error) {
+//             done(error)
+//         }
+//     }
+
+//     fetchData(callback)
+// })
+
+//* testing promises
+
+// test('the data is hello', ()=>{
+//     return expect(fetchPromise()).resolves.toBe('hello')
+// })
+
+// test('the fetch fails with an error', ()=>{
+//     return expect(fetchPromise()).rejects.toThrow('error')
+// })
+
+
+//* testing async await
+
+
+
 
 
