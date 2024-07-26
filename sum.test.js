@@ -96,7 +96,10 @@ import {sum, myFunction, fetchData, fetchPromise} from "./sum.js";
 
 //* testing async await
 
-
+test("the data is hello", async ()=>{
+    const data = await fetchPromise()
+    expect(data).toBe('hello')
+})
 
 
 
